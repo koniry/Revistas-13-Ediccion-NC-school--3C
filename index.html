@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mi web escolar</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#eef7ff; margin:40px; color:#1a2b4a; }
+    header { text-align:center; margin-bottom:20px; }
+    h1 { color:#0b3b70; }
+    .card { background:white; padding:18px; border-radius:10px; max-width:600px; margin:0 auto; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+    img { display:block; margin:12px auto; max-width:200px; border-radius:6px; }
+    button { display:block; margin:12px auto; padding:8px 14px; border-radius:8px; border:none; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¡Hola! Soy [Tu Nombre]</h1>
+    <p>Esta es mi página del proyecto escolar.</p>
+  </header>
+
+  <main class="card">
+    <h2>Sobre mi proyecto</h2>
+    <p>Escribe aquí de qué trata tu proyecto: ciencia, arte, historia…</p>
+    <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+    <button id="boton">Haz clic</button>
+    <p id="mensaje" style="text-align:center;"></p>
+  </main>
+
+  <script>
+    document.getElementById('boton').onclick = function(){
+      document.getElementById('mensaje').textContent = "¡Gracias por visitar mi web! 😊";
+    };
+  </script>
+</body>
+</html>
